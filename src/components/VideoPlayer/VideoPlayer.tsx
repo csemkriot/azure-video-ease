@@ -348,9 +348,10 @@ export const VideoPlayer = ({ src, poster, className }: VideoPlayerProps) => {
         </div>
       </div>
 
-      {/* Click to play/pause overlay */}
+      {/* Click to play/pause overlay - positioned to avoid controls */}
       <div 
         className="absolute inset-0 cursor-pointer"
+        style={{ bottom: showControls ? '80px' : '0' }}
         onClick={togglePlay}
       />
     </div>
