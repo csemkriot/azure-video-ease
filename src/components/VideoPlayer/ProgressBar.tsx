@@ -56,9 +56,9 @@ export const ProgressBar = ({
     if (!progressRef.current) return 0;
     
     const rect = progressRef.current.getBoundingClientRect();
-    const clickX = clientX - rect.left;
-    const timeRatio = Math.max(0, Math.min(1, clickX / rect.width));
-    return timeRatio * duration;
+    const clickX = Math.max(0, Math.min(rect.width, clientX - rect.left));
+    const timeRatio = clickX / rect.width;
+    return Math.max(0, Math.min(duration, timeRatio * duration));
   }, [duration]);
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
