@@ -61,7 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				player: {
+					bg: 'hsl(var(--player-bg))',
+					controls: 'hsl(var(--player-controls))',
+					overlay: 'hsl(var(--player-overlay))',
+					primary: 'hsl(var(--player-primary))',
+					'primary-glow': 'hsl(var(--player-primary-glow))',
+					secondary: 'hsl(var(--player-secondary))',
+					text: 'hsl(var(--player-text))',
+					'text-muted': 'hsl(var(--player-text-muted))',
+					border: 'hsl(var(--player-border))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-controls': 'var(--gradient-controls)',
+				'gradient-buffering': 'var(--gradient-buffering)'
+			},
+			boxShadow: {
+				'player': 'var(--shadow-player)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'controls': 'var(--transition-controls)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
